@@ -55,3 +55,12 @@ main {
   /* background: #d5d4d8; */
   border: 2px solid #d5d4d8;
 }
+
+.meme--image {
+  width: 50rem;
+  margin-left: 25rem;
+  height: 34rem;
+  padding: 2rem;
+  border: #a626d3 solid;
+  margin-top: 1px;
+}
