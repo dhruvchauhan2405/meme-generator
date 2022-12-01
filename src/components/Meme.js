@@ -2,10 +2,10 @@ import React from "react";
 import memesData from "../memesData";
 
 export const Meme = () => {
-  const [memeImage, setMemeImage] = React.useState("");
+  const memesArray = memesData.data.memes;
+  const [memeImage, setMemeImage] = React.useState(memesArray[0].url);
 
   function getMemeImage() {
-    const memesArray = memesData.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     setMemeImage(memesArray[randomNumber].url);
     // const url = memesArray[randomNumber].url;
